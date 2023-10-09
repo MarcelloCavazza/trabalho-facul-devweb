@@ -1,0 +1,14 @@
+/* ========= VARIABLES ========= */
+
+:root {
+  /* colors */
+  --hue: 40;
+  /* HSL color mode */
+  --hover-color-one: hsl(var(--hue) 36% 57%);
+  --mainFontSize: calc(1.5em * 0.875);
+
+  --background-color: rgb(20, 20, 20);
+  --text-color: rgb(255, 255, 255);
+  --accent-color: rgb(33, 150, 243);
+  --highlight-color: rgb(255, 196, 0);
+}

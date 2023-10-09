@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  font-size: var(--mainFontSize);
+
+  grid-template-areas:
+    "header header header"
+    "sidenav article article"
+    "footer  footer  footer";
+  column-gap: 1vw;
+}
+
+header,
+footer {
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 10vh;
+  justify-self: stretch;
+  width: 100%;
+}
+
+main {
+  grid-area: article;
+  margin-right: 5vw;
+}
+
+ul > li:hover {
+  background-color: var(--hover-color-one);
+  cursor: pointer;
+}
+a {
+  font-weight: bold;
+  color: rgb(75, 75, 153);
+}
+
+aside > ul > li {
+  margin-bottom: 1vw;
+}
+main > section > section {
+  margin-bottom: 2vw;
+}

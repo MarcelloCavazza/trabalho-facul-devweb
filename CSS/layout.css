@@ -1,0 +1,41 @@
+/* ========= LAYOUT ========= */
+.header,
+.footer {
+  height: 15vh;
+}
+
+.related {
+  min-width: 200px;
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+    grid-area: sidenav;
+  }
+footer {
+  grid-area: footer;
+}
+@media (max-width: 950px) {
+    aside{
+        display: none;
+    }
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "footer";
+  }
+}
